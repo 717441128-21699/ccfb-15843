@@ -16,3 +16,10 @@ node_modules/
 __pycache__/
 .venv/
 venv/
+shot-*.png
+*.log
+.chrome-prof*/
+fa-diag.ts
+cctest.ts
+validation-full*.log
+dist/

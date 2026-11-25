@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-11-25T17:12:39.294Z",
+  "seeds": [
+    101,
+    202
+  ],
+  "meteorTruth": 70,
+  "meteorDetectedEvents": 66,
+  "eventRecallPct": 94.3,
+  "stationObservationRecallPct": 91.3,
+  "falseAlarms": 1,
+  "falseAlarmHours": 1,
+  "falseAlarmsPerHour": 1,
+  "radiantMeanOffsetDeg": 0.36,
+  "radiantMaxOffsetDeg": 1.04,
+  "heightMeanAbsErrorPct": 2.07,
+  "heightMaxAbsErrorPct": 4.42,
+  "speedMeanAbsErrorPct": 0.22,
+  "speedMaxAbsErrorPct": 2.3,
+  "within5PctHeight": 66,
+  "within5PctSpeed": 66,
+  "totalTriangulated": 66,
+  "perShower": [
+    {
+      "showerId": "QUA",
+      "truth": 14,
+      "detected": 13,
+      "radiantOffsetDeg": 0.64
+    },
+    {
+      "showerId": "PER",
+      "truth": 14,
+      "detected": 13,
+      "radiantOffsetDeg": 0.13
+    },
+    {
+      "showerId": "ORI",
+      "truth": 14,
+      "detected": 14,
+      "radiantOffsetDeg": 0.16
+    },
+    {
+      "showerId": "LEO",
+      "truth": 14,
+      "detected": 13,
+      "radiantOffsetDeg": 0.16
+    },
+    {
+      "showerId": "GEM",
+      "truth": 14,
+      "detected": 13,
+      "radiantOffsetDeg": 0.7
+    }
+  ],
+  "acceptance": [
+    {
+      "key": "recall",
+      "label": "检测召回率 ≥ 90%",
+      "target": "≥90%",
+      "actual": "94.3% (66/70)",
+      "pass": true
+    },
+    {
+      "key": "falseAlarm",
+      "label": "每小时误报 ≤ 3 个",
+      "target": "≤3/h",
+      "actual": "1/h（1 个 / 1 站时；{\"ST-XL\":1,\"ST-FS\":0,\"ST-QL\":0}）",
+      "pass": true
+    },
+    {
+      "key": "radiant",
+      "label": "夜聚合辐射点与公布值相差 ≤ 2°",
+      "target": "≤2°",
+      "actual": "均值 0.36°，最大 1.04°",
+      "pass": true
+    },
+    {
+      "key": "height",
+      "label": "高度与参考网络结果相差 ≤ 5%",
+      "target": "≤5%",
+      "actual": "平均 2.07%，最大 4.42%，66/66 达标",
+      "pass": true
+    },
+    {
+      "key": "speed",
+      "label": "速度与参考网络结果相差 ≤ 5%",
+      "target": "≤5%",
+      "actual": "平均 0.22%，最大 2.3%，66/66 达标",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "meteor-observer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "多站流星视频检测、天文标定与三维交会定位系统",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "validate": "tsx scripts/validate.ts",
+    "seed": "tsx scripts/build-seed.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "puppeteer-core": "^25.18.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0"
+  }
+}
